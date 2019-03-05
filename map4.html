@@ -1,0 +1,114 @@
+Try it yourself
+
+Hover at top right of the code block to copy the code or open it in JSFiddle.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Marker Animations</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+<input id="pac-input" class="controls" type="text"
+       placeholder="Enter a location">
+<div id="map"></div>
+<script>
+
+    // The following example creates a marker in Stockholm, Sweden using a DROP
+    // animation. Clicking on the marker will toggle the animation between a BOUNCE
+    // animation and no animation.
+
+    var marker;
+
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: {lat: 59.325, lng: 18.070}
+        });
+        var input = /** @type {!HTMLInputElement} */(
+                document.getElementById('pac-input'));
+
+        var types = document.getElementById('type-selector');
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+        map.controls[google.maps.ControlPosition.TOP_LEFT].push(types);
+
+        var autocomplete = new google.maps.places.Autocomplete(input);
+        autocomplete.bindTo('bounds', map);
+
+
+
+        marker = new google.maps.Marker({
+            map: map,
+            draggable: true,
+            animation: google.maps.Animation.DROP,
+            position: {lat: 59.327, lng: 18.067}
+        });
+        marker.addListener('click', toggleBounce);
+
+        var infowindow = new google.maps.InfoWindow();
+        autocomplete.addListener('place_changed', function() {
+            infowindow.close();
+            marker.setVisible(false);
+            var place = autocomplete.getPlace();
+            if (!place.geometry) {
+                window.alert("Autocomplete's returned place contains no geometry");
+                return;
+            }
+
+            // If the place has a geometry, then present it on a map.
+            if (place.geometry.viewport) {
+                map.fitBounds(place.geometry.viewport);
+            } else {
+                map.setCenter(place.geometry.location);
+                map.setZoom(17);  // Why 17? Because it looks good.
+            }
+            marker.setIcon(/** @type {google.maps.Icon} */({
+                url: place.icon,
+                size: new google.maps.Size(71, 71),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(17, 34),
+                draggable: true,
+                scaledSize: new google.maps.Size(35, 35)
+            }));
+            marker.setPosition(place.geometry.location);
+            marker.setVisible(false);
+
+            var address = '';
+            if (place.address_components) {
+                address = [
+                    (place.address_components[0] && place.address_components[0].short_name || ''),
+                    (place.address_components[1] && place.address_components[1].short_name || ''),
+                    (place.address_components[2] && place.address_components[2].short_name || '')
+                ].join(' ');
+            }
+
+            infowindow.setContent('<div><strong>' + place.name + '</strong><br>' + address);
+            infowindow.open(map, marker);
+        });
+
+
+    }
+
+    function toggleBounce() {
+        if (marker.getAnimation() !== null) {
+            marker.setAnimation(null);
+        } else {
+            marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+    }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOX-WJfhMn_FjCg7m90OzfbYq5PrwOZV8&libraries=places&callback=initMap&callback=initMap">
+</script>
+</body>
+</html>

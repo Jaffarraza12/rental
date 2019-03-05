@@ -1,0 +1,402 @@
+@charset "UTF-8";
+/* ==========================================================================
+   Font definition
+   ========================================================================== */
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url("../fonts/OpenSans-Regular.eot?v=1.1.0");
+	src: url("../fonts/OpenSans-Regular.eot?#iefix&v=1.1.0") format("embedded-opentype"), 
+		 url("../fonts/OpenSans-Regular.woff2?v=1.1.0") format("woff2"), 
+		 url("../fonts/OpenSans-Regular.woff?v=1.1.0") format("woff"), 
+		 url("../fonts/OpenSans-Regular.ttf?v=1.1.0") format("truetype"), 
+		 url("../fonts/OpenSans-Regular.svg?v=1.1.0#Regular") format("svg");
+	font-weight: normal;
+	font-style: normal; 
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url("../fonts/OpenSans-Semibold.eot?v=1.1.0");
+	src: url("../fonts/OpenSans-Semibold.eot?#iefix&v=1.1.0") format("embedded-opentype"), 
+		 url("../fonts/OpenSans-Semibold.woff2?v=1.1.0") format("woff2"), 
+		 url("../fonts/OpenSans-Semibold.woff?v=1.1.0") format("woff"), 
+		 url("../fonts/OpenSans-Semibold.ttf?v=1.1.0") format("truetype"), 
+		 url("../fonts/OpenSans-Semibold.svg?v=1.1.0#Bold") format("svg");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url("../fonts/OpenSans-Light.eot?v=1.1.0");
+	src: url("../fonts/OpenSans-Light.eot?#iefix&v=1.1.0") format("embedded-opentype"), 
+		 url("../fonts/OpenSans-Light.woff2?v=1.1.0") format("woff2"), 
+		 url("../fonts/OpenSans-Light.woff?v=1.1.0") format("woff"), 
+		 url("../fonts/OpenSans-Light.ttf?v=1.1.0") format("truetype"), 
+		 url("../fonts/OpenSans-Light.svg?v=1.1.0#Light") format("svg");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/LatoLatinLight-Regular.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/LatoLatinLight-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/LatoLatinLight-Regular.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/LatoLatinLight-Regular.ttf') format('truetype'); 
+	font-style: normal;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/LatoLatinMed-Regular.eot'); /* IE9 Compat Modes */
+	src: url('../fonts/LatoLatinMed-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/LatoLatinMed-Regular.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/LatoLatinMed-Regular.ttf') format('truetype'); 
+	font-style: normal;
+	font-weight: bold;
+	text-rendering: optimizeLegibility;
+}
+
+
+
+/* ==========================================================================
+   Icon definition
+   ========================================================================== */
+
+
+@font-face {
+	font-family: "ga";
+  src:url("../fonts/ga.eot?2");
+  src:url("../fonts/ga.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/ga.woff?2") format("woff"),
+    url("../fonts/ga.ttf?2") format("truetype"),
+    url("../fonts/ga.svg#ga") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "ga" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "ga" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before {
+  content: "\61";
+}
+.icon-documents:before {
+  content: "\62";
+}
+.icon-new-document:before {
+  content: "\63";
+}
+.icon-notifications:before {
+  content: "\64";
+}
+.icon-team:before {
+  content: "\65";
+}
+.icon-integrations:before {
+  content: "\66";
+}
+.icon-templates:before {
+  content: "\67";
+}
+.icon-home:before {
+  content: "\68";
+}
+.icon-accelerator:before {
+  content: "\69";
+}
+.icon-entity:before {
+  content: "\6a";
+}
+.icon-document:before {
+  content: "\6b";
+}
+.icon-account:before {
+  content: "\6c";
+}
+.icon-list:before {
+  content: "\6d";
+}
+.icon-logout:before {
+  content: "\6e";
+}
+.icon-collapse:before {
+  content: "\6f";
+}
+.icon-dealboard:before {
+  content: "\70";
+}
+.icon-settings:before {
+  content: "\71";
+}
+.icon-search:before {
+  content: "\72";
+}
+.icon-display:before {
+  content: "\73";
+}
+.icon-recipients:before {
+  content: "\74";
+}
+.icon-send:before {
+  content: "\75";
+}
+.icon-trash:before {
+  content: "\76";
+}
+.icon-view:before {
+  content: "\77";
+}
+.icon-negotiation:before {
+  content: "\78";
+}
+.icon-add:before {
+  content: "\79";
+}
+.icon-remove:before {
+  content: "\7a";
+}
+.icon-check:before {
+  content: "\41";
+}
+.icon-email:before {
+  content: "\42";
+}
+.icon-password:before {
+  content: "\43";
+}
+.icon-options:before {
+  content: "\44";
+}
+.icon-action:before {
+  content: "\45";
+}
+.icon-alert:before {
+  content: "\46";
+}
+.icon-down:before {
+  content: "\47";
+}
+.icon-up:before {
+  content: "\48";
+}
+.icon-going-down:before {
+  content: "\49";
+}
+.icon-going-up:before {
+  content: "\4a";
+}
+.icon-products:before {
+  content: "\4b";
+}
+.icon-lock:before {
+  content: "\4c";
+}
+.icon-sales:before {
+  content: "\4d";
+}
+.icon-procurement:before {
+  content: "\4e";
+}
+.icon-hr:before {
+  content: "\4f";
+}
+.icon-realestate:before {
+  content: "\50";
+}
+.icon-legal:before {
+  content: "\51";
+}
+.icon-marketing:before {
+  content: "\52";
+}
+.icon-chat:before {
+  content: "\53";
+}
+.icon-reject:before {
+  content: "\54";
+}
+.icon-extend:before {
+  content: "\55";
+}
+.icon-reminder:before {
+  content: "\56";
+}
+.icon-integration:before {
+  content: "\57";
+}
+.icon-comment:before {
+  content: "\58";
+}
+.icon-print:before {
+  content: "\59";
+}
+.icon-scroll:before {
+  content: "\5a";
+}
+.icon-upload:before {
+  content: "\30";
+}
+.icon-phone:before {
+  content: "\31";
+}
+.icon-exit:before {
+  content: "\32";
+}
+.icon-support:before {
+  content: "\33";
+}
+.icon-dashboard:before {
+  content: "\34";
+}
+.icon-download:before {
+  content: "\35";
+}
+.icon-pin:before {
+  content: "\36";
+}
+.icon-review:before {
+  content: "\37";
+}
+.icon-ma:before {
+  content: "\38";
+}
+.icon-sent:before {
+  content: "\39";
+}
+.icon-reports:before {
+  content: "\21";
+}
+.icon-introduction:before {
+  content: "\22";
+}
+.icon-action-1:before {
+  content: "\23";
+}
+.icon-arrow-forward:before {
+  content: "\24";
+}
+.icon-arrow-back:before {
+  content: "\25";
+}
+.icon-sort:before {
+  content: "\26";
+}
+.icon-archive:before {
+  content: "\27";
+}
+.icon-notsent:before {
+  content: "\28";
+}
+.icon-sms:before {
+  content: "\29";
+}
+.icon-sign:before {
+  content: "\2a";
+}
+.icon-checked:before {
+  content: "\2b";
+}
+.icon-card:before {
+  content: "\2c";
+}
+.icon-edit:before {
+  content: "\2d";
+}
+.icon-vote:before {
+  content: "\2e";
+}
+.icon-delete-doc:before {
+  content: "\2f";
+}
+.icon-reminder-email:before {
+  content: "\3a";
+}
+.icon-new-version:before {
+  content: "\3b";
+}
+.icon-folder:before {
+  content: "\3c";
+}
+.icon-medal:before {
+  content: "\3d";
+}
+.icon-doc:before {
+  content: "\3e";
+}
+.icon-ppt:before {
+  content: "\3f";
+}
+.icon-lost:before {
+  content: "\40";
+}
+.icon-switch:before {
+  content: "\5b";
+}
+.icon-checkbox-on:before {
+  content: "\5d";
+}
+.icon-video:before {
+  content: "\5e";
+}
+.icon-textfield:before {
+  content: "\5f";
+}
+.icon-add-content:before {
+  content: "\60";
+}
+.icon-signature:before {
+  content: "\7b";
+}
+.icon-initials:before {
+  content: "\7c";
+}
+.icon-checkbox:before {
+  content: "\7d";
+}
+.icon-docx:before {
+  content: "\7e";
+}
+.icon-eps:before {
+  content: "\5c";
+}
+.icon-gif:before {
+  content: "\e000";
+}
+.icon-pdf:before {
+  content: "\e001";
+}
+.icon-jpg:before {
+  content: "\e002";
+}
+.icon-png:before {
+  content: "\e003";
+}
+.icon-tiff:before {
+  content: "\e004";
+}

@@ -1,0 +1,205 @@
+
+@font-face{font-family:"FrutigerBoldCn";src:url("../fonts/fruitger/FrutigerLTStd-BoldCn.eot");src:url("../fonts/fruitger/FrutigerLTStd-BoldCn.eot?#iefix") format("embedded-opentype"),url("../fonts/fruitger/FrutigerLTStd-BoldCn.woff") format("woff"),url("../fonts/fruitger/FrutigerLTStd-BoldCn.ttf") format("truetype"),url("global/fonts/FrutigerBoldCn/FrutigerLTStd-BoldCn.svg#FrutigerLTStd") format("svg");font-weight:normal;font-style:normal}
+@font-face{font-family:"FrutigerBlack";src:url("../fonts/fruitger/frutiger-black-webfont.eot");src:url("../fonts/fruitger/frutiger-black-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/fruitger/frutiger-black-webfont.woff") format("woff"),url("../fonts/fruitger/frutiger-black-webfont.ttf") format("truetype"),url("global/fonts/FrutigerBlack/frutiger-black-webfont.svg#FrutigerBlack") format("svg");font-weight:normal;font-style:normal}
+@font-face{font-family:"FrutigerBold";src:url("../fonts/fruitger/frutiger-bold-webfont.eot");src:url("../fonts/fruitger/frutiger-bold-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/fruitger/frutiger-bold-webfont.woff") format("woff"),url("../fonts/fruitger/frutiger-bold-webfont.ttf") format("truetype"),url("global/fonts/FrutigerBold/frutiger-bold-webfont.svg#FrutigerBold") format("svg");font-weight:normal;font-style:normal}
+@font-face{font-family:"FrutigerLight";src:url("../fonts/fruitger/frutiger-light-webfont.eot");src:url("../fonts/fruitger/frutiger-light-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/fruitger/frutiger-light-webfont.woff") format("woff"),url("../fonts/fruitger/frutiger-light-webfont.ttf") format("truetype"),url("global/fonts/FrutigerLight/frutiger-light-webfont.svg#frutiger_45_lightregular") format("svg");font-weight:normal;font-style:normal}
+@font-face{font-family:"FrutigerRoman";src:url("../fonts/fruitger/frutiger-roman-webfont.eot");src:url("../fonts/fruitger/frutiger-roman-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/fruitger/frutiger-roman-webfont.woff") format("woff"),url("../fonts/fruitger/frutiger-roman-webfont.ttf") format("truetype"),url("global/fonts/FrutigerRoman/frutiger-roman-webfont.svg#frutiger_55roman") format("svg");font-weight:normal;font-style:normal}
+@font-face{font-family:"FrutigerLightCn";src:url("../fonts/fruitger/Frutiger-LightCn.eot");src:url("../fonts/fruitger/Frutiger-LightCn.woff") format("woff"),url("../fonts/fruitger/Frutiger-LightCn.ttf") format("truetype"),url("../fonts/fruitger/Frutiger-LightCn.svg") format("svg");font-weight:normal;font-style:normal}
+@font-face{font-family:"FrutigerExtraBlackCn";src:url("../fonts/fruitger/Frutiger-ExtraBlackCn.eot");src:url("../fonts/fruitger/Frutiger-ExtraBlackCn.woff") format("woff"),url("../fonts/fruitger/Frutiger-ExtraBlackCn.ttf") format("truetype"),url("../fonts/fruitger/FrutigerExtraBlackCn/Frutiger-ExtraBlackCn.svg") format("svg");font-weight:normal;font-style:normal}
+@font-face{font-family:"FrutigerCn";src:url("../fonts/fruitger/Frutiger-Cn.eot");src:url("../fonts/fruitger/Frutiger-Cn.woff") format("woff"),url("../fonts/fruitger/Frutiger-Cn.ttf") format("truetype"),url("global/fonts/FrutigerCn/Frutiger-Cn.svg") format("svg");font-weight:normal;font-style:normal}
+@font-face{font-family:"FrutigerBlackCn";src:url("../fonts/fruitger/Frutiger-BlackCn.eot");src:url("../fonts/fruitger/Frutiger-BlackCn.woff") format("woff"),url("../fonts/fruitger/Frutiger-BlackCn.ttf") format("truetype"),url("global/fonts/FrutigerBlackCn/Frutiger-BlackCn.svg") format("svg");font-weight:normal;font-style:normal}
+@font-face{font-family:"FrutigerBlackCnIE";src:url("../fonts/fruitger/Frutiger-BlackCn.eot");font-weight:normal;font-style:normal}
+
+
+
+.rentalForm{
+    font-family: 'FrutigerBlackCn',Arial,sans-serif;
+    /*font-size: 16px;*/
+}
+ h1 {
+     margin-top: 5px !important;
+     margin-bottom: 10px !important;
+ }
+
+h1,h2,h3,h4,h5,h6 {
+    font-family:'FrutigerBoldCn',Arial,sans-serif;
+    text-transform: uppercase;
+    margin-left: -4px;
+}
+.icheck-inline label{
+    font-weight: 300 !important;
+}
+
+.rentalForm label {
+    font-family: 'FrutigerBlackCn',Arial,sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #676363 !important;
+
+}
+.page-content-wrapper{
+    /*background:#222d32;*/
+    background:#383840;
+}
+
+.caption h1 {
+    font-size: 30px;
+    float:left;
+}
+
+.caption .btn{
+    margin: 10px 12px;
+
+}
+
+
+.btn {
+    padding: 2px 12px;
+
+    font-family: 'FrutigerBlackCn',Arial,sans-serif;
+}
+.dataTables_length{
+    position: absolute;
+    right: 5px;
+    /*top:-50px;*/
+    top:-55px;
+}
+.dataTables_length select{
+    height: 30px !important;
+    font-size: 14px !important;
+    margin-top: 5px;
+}
+.dataTables_length label{
+    font-size:0px;
+}
+.col {
+    margin-left: 2px;
+}
+
+.input-group-btn button{
+    margin: 26px 0px auto -4px !important;
+    height:42px !important;
+
+}
+
+.rentalForm input[type='text'],.rentalForm select,.rentalForm textarea {
+    font-family: 'FrutigerBlackCn',Arial,sans-serif;
+    font-size: 12px;
+    padding: 4px !important;
+    /*border-bottom: 1px solid #cccccc !important;*/
+    /*border: none;*/
+}
+.rentalForm input[type='email'], .rentalForm input[type='password']{
+    font-family: 'FrutigerBlackCn',Arial,sans-serif;
+    font-size: 12px;
+    padding: 4px !important;
+    /*border-bottom: 1px solid #cccccc !important;*/
+    /*border: none;*/
+}
+.table thead tr th{
+    font-weight: 400;
+    font-size: 16px;
+}
+table.dataTable td{
+    /*font-size: 17px;*/
+    font-size: 14px;
+    border:none !important;
+}
+.table-hover>tbody>tr:hover{
+    background: transparent;
+}
+.table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
+    /*background:rgb(165, 165, 165);*/
+    /*font-size: 17px;*/
+    font-size: 12px;
+    border:none !important;
+    /*color: #fff;*/
+    color: #4b646f;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.table tr:first-child>th input,.table tr:first-child>th select{
+    height: 30px;
+    color: #262626;
+}
+table.dataTable td.sorting_1, table.dataTable td.sorting_2, table.dataTable td.sorting_3, table.dataTable th.sorting_1, table.dataTable th.sorting_2, table.dataTable th.sorting_3{
+    background: transparent !important;
+
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    /*background:#f3f4f6;*/
+    background:#ffffff;
+    color: #888888;
+    border: 1px solid red;
+}
+
+.table-striped>tbody>tr:nth-of-type(even) {
+    /*background:#f3f4f6;*/
+    background:#ffffff;
+    color: #888888;
+}
+
+.rentalForm input,.rentalForm select{
+    height:40px;
+}
+.rentalForm textarea {
+    height: 100px;
+}
+
+.rentalForm input[type= submit],.rentalForm button {
+    border-radius:4px !important ;
+
+}
+.greenish{
+    /*background: #6d7839;*/
+    background: #F49231;
+    color: #fff;
+    padding: 6px 12px;
+    height: 50px;
+    font-family: 'FrutigerBlackCn',Arial,sans-serif;
+    /*font-size: 18px;*/
+    font-size: 16px;
+    margin: 0px 0px 15px 15px;
+}
+.red {
+    color: #fff;
+    padding: 6px 12px;
+    height: 50px;
+    font-family: 'FrutigerBlackCn',Arial,sans-serif;
+    font-size: 18px;
+
+}
+
+.nav-pills>li>a, .nav-tabs>li>a {
+    /*background: #e8e8e8;*/
+}
+
+.nav-pills>li>a:hover, .nav-tabs>li>a:hover {
+    background: #f9b122 !important;
+    color: #ffffff;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    /*background:#262626 !important;*/
+    background:#ffffff !important;
+    color:#616161 !important;
+}
+
+.greenish:hover{
+    /*background: #262626;*/
+    background: #f9b122;
+
+    color: #fff;
+}
+.buttonPadding {
+    margin-top: 12px;
+}
+#lightermargin{
+    margin-left:13px;
+}
+.lighterPadding{
+    padding-left:3px !important;
+
+
+}

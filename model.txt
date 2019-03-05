@@ -1,0 +1,7 @@
+public function index(){}
+    public function getData() {}
+    public function getAdd() {}
+    public function Add(Request $request) {}
+    public function getEdit($id) {}
+    public function Edit($id,Request $request) {}
+    public function Destroy($id,Request $request) {}
