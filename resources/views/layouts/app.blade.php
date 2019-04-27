@@ -171,7 +171,7 @@
     <![endif]-->
     <!-- BEGIN CORE PLUGINS -->
     <script src="{{asset('resources/assets/global/plugins/jquery.min.js')}}" type="text/javascript"></script>
-    <script src="//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="{{asset('resources/assets/js/jquery.dataTables.min.js')}}" type="text/javascript"></script>
     <script src="{{asset('resources/assets/global/plugins/bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>
     <script src="{{asset('resources/assets/js/jquery.bpopup.min.js')}}" type="text/javascript"></script>
     <script src="{{asset('resources/assets/dist/jquery.magnific-popup.js')}}" type="text/javascript"></script>
@@ -197,7 +197,14 @@
         $.sidebarMenu($('.sidebar-menu'))
     </script>
     <script>
-        $("#building").on('change',function () {
+
+        $(document).ready(function () {
+            @if( ! \Illuminate\Support\Facades\Session::get('defaultBuilding') )
+app.popUp('{{URL('show-building')}}','body')
+            @endif
+
+        });
+$("#building").on('change',function () {
            var id = $(this).val();
             $.get('{{URL('/building/switch/')}}/'+id, function(){
                 if('response'){
@@ -207,8 +214,6 @@
                 }
             });
         });
-
-        alert('jaffar   ')
     </script>
 
 

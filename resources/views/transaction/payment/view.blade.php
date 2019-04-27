@@ -1,14 +1,11 @@
 @extends('layouts.appmodel')
 @section('content')
+
     <div class="portlet-title">
 
         <div class="caption font-red-sunglo">
 
             <h3 class="caption-subject bold uppercase text-center"> <i class="fa fa-money"></i> {{$heading}}<div class="abc">Account Balance is  ${{$total}}</div></h3>
-
-
-
-
 
     </div>
     <div class="container-fluid">
@@ -29,7 +26,7 @@
 
                             </div>
 
-                            <div class="portlet light ">
+                            <div class="portlet  ">
                                 {{ csrf_field() }}
                                 <div class="portlet-body flip-scroll">
                                     <table id="attribute" class="table table-striped table-bordered table-hover dt-responsive dataTable no-footer dtr-inline collapsed">
@@ -139,7 +136,7 @@
 
                                 </div>
 
-                                <div class="portlet light ">
+                                <div class="portlet  ">
                                     {{ csrf_field() }}
                                     <div class="portlet-body flip-scroll">
                                         <table id="attribute" class="table table-striped table-bordered table-hover dt-responsive dataTable no-footer dtr-inline collapsed">

@@ -123,7 +123,7 @@ class LeaseController extends Controller
             $i=0;
             $payment->PaymentAdjustment($request,$lease_id);
             Session::flash('success_message', ' Lease has been create.!');
-            return redirect()->back();
+            return redirect('payment');
         } else {
 
 

@@ -15,7 +15,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <!-- BEGIN SAMPLE TABLE PORTLET-->
-                            <div class="portlet light">
+                            <div class="portlet ">
 
                                 <div class="portlet-body flip-scroll">
                                     {!! Form::open(array('url' => $ActionURL ,'method'=>'post')) !!}

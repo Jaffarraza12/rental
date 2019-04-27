@@ -30,7 +30,21 @@
 
                     </div>
                 </div>
-                    <div class="form-group col-md-6 col-lg-6 applicant_field">
+                <div class="form-group col-md-6 col-lg-6">
+                    <div class="input-icon input-icon-lg right">
+                        <label >Applicant Type</label>
+                        {!! Form::select('applicant_type',array(
+                                '1' => 'Select Applicant From Existing list',
+                                '2' => 'Add New'
+                        ),null,array('placeholder'=> "","class"=>"form-control","id"=>"applicant_type" )) !!}
+                        <span class="help-block">{{ $errors->mess->first('applicant_id') }}</span>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+
+                <div class="clearfix"></div>
+                <div class="form-group col-md-12 col-lg-12 applicant_field">
                     <div class="input-icon input-icon-lg right">
                         <label>Applicant Name</label>
                         {!! Form::text('applicant',old('applicant'),array('placeholder'=> "","class"=>"form-control","id"=>"applicant" )) !!}
@@ -38,7 +52,44 @@
                     </div>
                 </div>
                 <div class="clearfix"></div>
+                <!--applicant form-->
+                <div class="row applicant_form">
+                    <div class="col-md-12">
+                        <!-- BEGIN SAMPLE TABLE PORTLET-->
+                        <div class="portlet light bordered">
+                            <div class="portlet-title">
+                                <div class="caption">
+                                    <h2>Applicant Detail.</h2>
+                                </div>
+                                <div class="tools">
+                                    <div class="dt-buttons pull-right">
+                                        <div class="btn-group">
+                                            <a data-toggle="dropdown" href="javascript:;" class="btn btn-lg  green dropdown-toggle" aria-expanded="false"> Actions
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul class="dropdown-menu pull-right">
+                                                <li>
+                                                    <a>
+                                                        <button class="btn save-applicant" type="button"><i class="fa fa-save do_post"></i>Save</button>
+                                                    </a>
+                                                </li>
 
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @include("common.errors")
+                            @yield('content')
+                            <div class="portlet-body flip-scroll">
+                                {!! Form::hidden("url",URL('unit/'),array("class","url")) !!}
+                                {{--@include('applicant.prospect.form')--}}
+                            </div>
+                            <!-- END PAGE BASE CONTENT -->
+                        </div>
+                    </div>
+                </div>
+                <!--applicant form-->
 
             </div>
             </div>
@@ -64,6 +115,8 @@
                 </div>
             </div>
         </div>
+                <br/>
+                <br/>
 
                 <div class="clearfix"></div>
         <!-- LEASE FORM -->

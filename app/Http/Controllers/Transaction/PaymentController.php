@@ -73,7 +73,6 @@ class PaymentController extends Controller
             ->leftJoin("unit","unit.unit_id","=","payment.unit_id")
             ->leftJoin("lease","lease.lease_id","=","payment.lease_id")
             ->leftJoin("lease_expense","lease_expense.lease_exp_id","=","payment.lease_exp_id")
-            ->where('payment.user_id',$userId)
             ->where('payment.building_id',$buildingId)
             ->OrderBy("payment.due_date")
         )->editColumn('payment',
@@ -107,7 +106,7 @@ class PaymentController extends Controller
                     $query->where('building.building_id', '=', Input::get('building_id'));
                 }
                 if (Input::get('unit_id')) {
-                    $query->where('lease.unit_id', '=', Input::get('unit_id'));
+                    $query->where('payment.unit_id', '=', Input::get('unit_id'));
                 }
                 if (Input::get('tenant_id')) {
                     $query->where('lease.tenant_id', '=', Input::get('tenant_id'));
@@ -128,6 +127,7 @@ class PaymentController extends Controller
                     }
                 }
             })
+
             ->make(true);
 
         return $payment;
@@ -235,8 +235,6 @@ class PaymentController extends Controller
         $dts =Carbon::now()->subDay(360);
 
 
-
-
        $payments = Payment::select("payment.payment_id","payment.lease_id","payment.amount","payment.due_date","building.name","unit.name as Unitname","lease_expense.description" )
             ->leftJoin("building","building.building_id","=","payment.building_id")
             ->leftJoin("unit","unit.unit_id","=","payment.unit_id")
@@ -311,6 +309,7 @@ class PaymentController extends Controller
 
                 $pay = Payment::find($data);
                 $pay->payment = 2;
+                $pay->recieve_at = time();
                 $pay->save();
                 Session::flash('success_message', ' Payment Has Been Made!');
                 return redirect()->back();

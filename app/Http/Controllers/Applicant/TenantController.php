@@ -60,7 +60,6 @@ class TenantController extends Controller
                 $j->on("payment.payment_type",'=',DB::raw("'lease'"));
                 $j->on("payment.payment",'=',DB::raw("0"));
             })
-            ->where('tenant.user_id',$userId)
             ->where('building.building_id',$buildingId)
             ->orderBy('due_date','asc')
             ->groupBy('tenant.id')

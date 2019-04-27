@@ -258,15 +258,20 @@ class BuildingController extends Controller
         }
 
     }
-    public function getBuilding($id) {
+    public function getBuilding($id,$u) {
         Building::find($id);
         $building = Building::where('building_id',$id)->first();
-        $buildingContact = BuildingContact::where('building_id',$id)->first();
         $json = array();
         $json['building_id'] = $building->building_id;
         $json['name'] = $building->name;
-        $json['manager'] = $buildingContact->contact_person .' ( '.$buildingContact->designation.' ) ';
-        $json['phone'] = $buildingContact->phone;
+
+        $unit = Unit::where('unit_id',$u)->first();
+        $unit = Unit::where('unit_id',$u)->first();
+
+        $json['multi_tenant'] = ($unit->multi_tenant) ? 'Yes' : 'No';
+        $json['no_bedroom'] = $unit->no_bedroom;
+        $json['furnished'] = ($unit->furnished) ? 'Yes' : 'No';
+        $json['type'] = $unit->type;
         $json['num_floors'] = $building->num_floors;
         $json['units'] = $building->units;
         $json['city'] = $building->city;

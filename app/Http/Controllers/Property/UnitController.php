@@ -32,6 +32,7 @@ class UnitController extends Controller
         $building_id = (int) $this->building;
         $building = Building::where('building_id',$building_id)->first();
         $units = Unit::where('building_id',$building_id)->get();
+
         $heading = $building->name;
         //unit amenities
         $unit_amenities =array();
@@ -158,7 +159,7 @@ class UnitController extends Controller
                 ]);
             endforeach;
             Session::flash('success_message', ' Unit Has Been Added !');
-            return redirect('unit/'.$id);
+            return redirect('unit');
         } else {
             return redirect()->back()->withInput()
                 ->withErrors($validator,'mess');
@@ -186,7 +187,8 @@ class UnitController extends Controller
                 ]);
             endforeach;
 
-            $json['success'] = " Duplicate Unit Has Been Added.";
+
+        $json['success'] = " Duplicate Unit Has Been Added.";
             $json['unit_total'] = Unit::where('building_id',$unit->building_id)->count();
             echo json_encode($json);
 

@@ -31,8 +31,8 @@ class DashboardController extends Controller
             'Home'=> URL('/')
         );
 
-       $fromDate = date('Y-m').'-01';
-       $endDate = date('Y-m').'-30';
+       $fromDate = strtotime(date('Y-m').'-01');
+       $endDate = strtotime(date('Y-m').'-30');
        $applicants = Applicant::where('tenant',100)->OrderBy('applicant_id','DESC')->take(3)->get();
        $building = Building::select()->get();
        return view('common.dashboard',[
@@ -46,11 +46,21 @@ class DashboardController extends Controller
                         ->orwhere('multi_tenant',1);
                 })->count(),
 
-            'TotalPayment'=> Payment::select(DB::raw('SUM(amount) as sales'))->whereBetween('recieve_at',array($fromDate,$endDate))->first(),
+            'TotalPayment'=> Payment::select(DB::raw('SUM(amount) as sales'))->where('building_id',1)->whereBetween('recieve_at',array($fromDate,$endDate))->first(),
             'TotalWorkOrder'=> WorkOrder::where('status','!=',2)->count(),
             'TotalApplicant'=> Applicant::where('tenant',0)->count(),
             'ActiveMenu'=> 'dashboard',
        ]);
+    }
+
+
+    public function showBuilding(){
+
+        $buildings = Building::select()->get();
+        $heading = 'SELECT YOUR BUILDING FIRST';
+
+        return view('common.showBuilding', compact('buildings','heading'));
+
     }
 
     public function Logout(){

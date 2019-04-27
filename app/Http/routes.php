@@ -58,7 +58,7 @@ Route::group(['middlewareGroups' => ['web']], function () {
         Route::post('/building/edit/{building}', 'Property\BuildingController@Edit');
         Route::post('/building/remove/{building}', 'Property\BuildingController@Destroy');
         Route::post('/building/remove-contact/{building_contact_id}', 'Property\BuildingController@DestroyContact');
-        Route::get('/building/get/{building}', 'Property\BuildingController@getBuilding');
+        Route::get('/building/get/{building}/{unit}', 'Property\BuildingController@getBuilding');
 
         Route::get('/building/switch/{building}', 'Property\BuildingController@SwitchBuilding');
 
@@ -174,6 +174,7 @@ Route::group(['middlewareGroups' => ['web']], function () {
         Route::get('vendors-category/data', 'Inventory\VendorCategoryController@getData');
         Route::resource('vendors-category', 'Inventory\VendorCategoryController');
         Route::get('account/data', 'System\AccountController@getData');
+        Route::get('show-building', 'Common\DashboardController@showBuilding');
         Route::resource('account', 'System\AccountController');
         //task
         Route::get('task/data', 'Common\TaskController@getData');

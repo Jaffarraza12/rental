@@ -185,10 +185,16 @@ input[type=number] {
     font-size: 14px;
 }
 
+
+
 .flag_green {
     /*background: rgb(28,170,119);*/
     /*background: #2e8dcc;*/
     background: #61a1cc;
+}
+
+.portlet.light{
+    background:transparent;
 }
 
 .help-message{

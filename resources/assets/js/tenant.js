@@ -1,6 +1,7 @@
 var tenant  = {
     init : function () {
       //  parent.resizeIframe();
+        tenant.unitfield($('#building').val())
         $(document).on("change","#building",function () {
             $("#lease_profile").fadeOut();
             $("#unit,#unit_show").val("");
@@ -129,25 +130,29 @@ var tenant  = {
 
 
 
+
     },unitfield:function (id) {
         $( "#unit_show" ).autocomplete({
             source: app.baseUrl()+"/unit/get/"+id
             ,select:function( event, ui ) {
-                app.getWithCallback(app.baseUrl()+'/building/get/'+id,[],function (resp) {
+                app.getWithCallback(app.baseUrl()+'/building/get/'+id+'/'+ui.item.value,[],function (resp) {
                     var json = $.parseJSON(resp);
                     if(!$(".mega-menu").length) {
-                        var html = '<h3><icon class="fa fa-building"></icon> '+json["name"]+'</h3><h5><icon class="fa fa-square"></icon> ' + ui.item.label + ' </h5><h5><icon class="fa fa-user-md"></icon> '+json["manager"]+'</h5><h5><icon class="fa fa-phone"></icon> '+ json["phone"]+'</h5><h5><icon class="fa fa-location-arrow"></icon> '+ json["address"]+'</h5><div class="margin-top-10 margin-bottom-10 clearfix">'
+                        var html = '<h3><icon class="fa fa-building"></icon> '+json["name"]+'</h3>' +
+                            '<h5><icon class="fa fa-square"></icon> ' + ui.item.label + ' </h5>' +
+                            '<h5>Unit Type : ' + json['type']+ ' </h5>' +
+                            '<h5>Furnished : ' + json['furnished']+ ' </h5>' +
+                            '<h5>No of Bedroom : ' + json['no_bedroom']+ ' </h5>' +
+                            '<h5>Allow Multi Tenants : ' + json['multi_tenant']+ ' </h5>' +
+                            '<h5><icon class="fa fa-location-arrow"></icon> '+ json["address"]+'</h5>' +
+                            '<div class="margin-top-10 margin-bottom-10 clearfix">'
                         $(".building_detail").html(html)
                     }
                 })
                 if($("#applicant_id").val()){
                     $("#lease_profile").fadeIn();
                 }
-                if(!$(".mega-menu").length)
-                {
-                    //parent.resizeIframe();
 
-                }
                 $("#unit_show").val(ui.item.label)
                 $("#unit_id").val(ui.item.value)
 
