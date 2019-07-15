@@ -13,6 +13,7 @@ use App\Http\Model\WorkOrder;
 use App\Http\Model\Applicant;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 
 class DashboardController extends Controller
 {
@@ -31,6 +32,7 @@ class DashboardController extends Controller
             'Home'=> URL('/')
         );
 
+
        $fromDate = strtotime(date('Y-m').'-01');
        $endDate = strtotime(date('Y-m').'-30');
        $applicants = Applicant::where('tenant',100)->OrderBy('applicant_id','DESC')->take(3)->get();
@@ -45,8 +47,14 @@ class DashboardController extends Controller
                     $q->where('available',1)
                         ->orwhere('multi_tenant',1);
                 })->count(),
+            $defaultBuilding =  0;
+            if(Session::get('defaultBuilding')){
+                $defaultBuilding = Session::get('defaultBuilding');
+            } else {
+                $defaultBuilding = 0;
+            }
 
-            'TotalPayment'=> Payment::select(DB::raw('SUM(amount) as sales'))->where('building_id',1)->whereBetween('recieve_at',array($fromDate,$endDate))->first(),
+            'TotalPayment'=> Payment::select(DB::raw('SUM(amount) as sales'))->where('building_id',$defaultBuilding )->whereBetween('recieve_at',array($fromDate,$endDate))->first(),
             'TotalWorkOrder'=> WorkOrder::where('status','!=',2)->count(),
             'TotalApplicant'=> Applicant::where('tenant',0)->count(),
             'ActiveMenu'=> 'dashboard',
