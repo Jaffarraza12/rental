@@ -55,8 +55,7 @@ class UserController extends Controller
         // $buildingId = $request->session()->get('defaultBuilding');
         $userId = Auth::id();
         return Datatables::of(User  ::select(array('id','name','email','contact','address','created_at'))->orderBy('id','desc'))
-
-            ->addColumn('actions',
+          ->addColumn('actions',
                 '<div class="btn-group">
                    
                     <button type="button" class="btn dropdown-toggle flag_green" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" color: #fff">
@@ -68,8 +67,7 @@ class UserController extends Controller
                                  <li><a class="" href="{{ URL("/sub_users/edit/".$id)}}">Edit</a></li>
                                  <li><a data-url="{{ URL("/sub_users/remove/".$id)}}" class="remove"  data-id="{{$id}}">Delete</a></li>
                              </ul>
-                </div>
-                     ')
+                </div>')
             ->make(true);
     }
     //GET EDIt
