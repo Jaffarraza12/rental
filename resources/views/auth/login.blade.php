@@ -29,9 +29,9 @@
                         <button type="submit" id="btn-login" class="btn btn-fill ng-scope success" translate="">Login</button><br>
                         <small><br><a href="#" translate="" class="ng-scope">Don't have an account? Get Started</a></small>
                     </div>
-                    <div class="identifierbox">
+                    {{--<div class="identifierbox">
                         <button type="button" class="btn-identifier linkedin" onclick="launchIdentifier('linkedin')"></button>
-                    </div>
+                    </div>--}}
                 </form>
             </div>
             <div id="reset-request" class="login-box hidden">
