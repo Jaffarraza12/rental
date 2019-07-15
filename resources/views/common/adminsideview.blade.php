@@ -17,7 +17,7 @@
         <li  @if(!empty($active_menu) && $active_menu =='building') class="active" @endif >
             <a href="#">
                 <i class="fa fa-building-o"></i>
-                <span>Buildings</span>
+                <span>Buildings {{$current_user->pid}}</span>
                 <i class="fa fa-angle-left pull-right"></i>
                 <span class="label label-primary pull-right">4</span>
 
