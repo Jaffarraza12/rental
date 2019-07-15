@@ -56,7 +56,7 @@ class DashboardController extends Controller
                 })->count(),
 
             'TotalPayment'=> Payment::select(DB::raw('SUM(amount) as sales'))->where('building_id',$defaultBuilding )->whereBetween('recieve_at',array($fromDate,$endDate))->first(),
-            'TotalWorkOrder'=> WorkOrder::where('status','!=',2)->count(),
+            'TotalWorkOrder'=> WorkOrder::where('status','!=',2)->where('buidling_id',$defaultBuilding )->count(),
             'TotalApplicant'=> Applicant::where('tenant',0)->count(),
             'ActiveMenu'=> 'dashboard',
        ]);
