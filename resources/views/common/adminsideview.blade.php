@@ -13,6 +13,7 @@
             </a>
 
         </li>
+        @if($current_user->pid == 0)
         <li  @if(!empty($active_menu) && $active_menu =='building') class="active" @endif >
             <a href="#">
                 <i class="fa fa-building-o"></i>
@@ -28,6 +29,7 @@
                 <li><a href="{{URL('unit/add' )}}">Add Unit</a></li>
             </ul>
         </li>
+        @endif
         <li @if(!empty($active_menu) && $active_menu =='applicant') class="active" @endif >
             <a >
                 <i class="fa fa-user-md"></i> <span>Applicant</span>
