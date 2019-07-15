@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d4974cb-e432-49c4-901b-06d44bfb0684" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Transaction/PaymentController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Transaction/PaymentController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Model/PaymentReceived.php" afterPath="$PROJECT_DIR$/app/Http/Model/PaymentReceived.php" />
     </list>
     <ignored path="rems.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +32,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PaymentController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PaymentController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Transaction/PaymentController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -60,11 +60,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PaymentReceived.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PaymentReceived.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Model/PaymentReceived.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -235,7 +235,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/system/account/edit.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/inventory/vendor/add.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Inventory/VendorController.php" />
         <option value="$PROJECT_DIR$/resources/views/inventory/vendor/edit.blade.php" />
@@ -286,6 +285,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Transaction/LeaseController.php" />
         <option value="$PROJECT_DIR$/resources/assets/js/tenant.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Transaction/PaymentController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Model/PaymentReceived.php" />
       </list>
     </option>
   </component>
@@ -864,12 +864,12 @@
       <workItem from="1517371289073" duration="7465000" />
       <workItem from="1517642473639" duration="4630000" />
       <workItem from="1556308440352" duration="17867000" />
-      <workItem from="1563179576306" duration="7079000" />
+      <workItem from="1563179576306" duration="7218000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1739805000" />
+    <option name="totallyTimeSpent" value="1739944000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1519,14 +1519,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Model/PaymentReceived.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Transaction/PaymentController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1538,6 +1530,14 @@
             <marker date="1563187625997" expanded="true" signature="3276:3394" ph="..." />
             <marker date="1563187625997" expanded="true" signature="3423:3536" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Model/PaymentReceived.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
