@@ -67,7 +67,6 @@ app.popUp('{{URL('show-building')}}','body')
         @endif
         $('.buildingSave').click(function(){
             var id = $('#building').val();
-            alert(id)
             if(id) {
                 $.get('{{URL('/building/switch/')}}/' + id, function () {
                     if ('response') {
