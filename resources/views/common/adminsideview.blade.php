@@ -19,7 +19,7 @@
                 <i class="fa fa-building-o"></i>
                 <span>Buildings </span>
                 <i class="fa fa-angle-left pull-right"></i>
-                <span class="label label-primary pull-right">{{sizeof($building)}}</span>
+                <span class="label label-primary pull-right">{{sizeof($selected_building)}}</span>
 
             </a>
             <ul class="sidebar-submenu"  @if(!empty($active_menu) && $active_menu =='building')  style="display: block;" @else  style="display: none;" @endif>
