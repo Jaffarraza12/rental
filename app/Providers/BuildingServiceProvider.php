@@ -32,7 +32,6 @@ class BuildingServiceProvider extends ServiceProvider
 
         $user = User::get();
         echo $userId = Auth::id();
-        echo $userId = Auth::pid();
 
         //$defaultBuilding = $request->session()->get('defaultBuilding');
 
