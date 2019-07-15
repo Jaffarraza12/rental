@@ -4,7 +4,7 @@ var app  = {
     },
     baseUrl:function()
     {
-        return "http://localhost/rental";
+        return "http://rental.appertunity.net/";
     },
     postWithCallback:function(url,  data, callback)
     {
