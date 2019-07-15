@@ -50,7 +50,7 @@ class AddPayment extends Controller
             $AddPaymennt->cheque_no = $request->cheque_no;
             $AddPaymennt->comment = $request->comment;
             $AddPaymennt->save();
-            Session::flash('success_message', ' Payment Has Been Added !');
+            Session::flash('success_message', ' Payment Has Been Submitted by the client  !');
             return redirect()->back();
         }
          else {
