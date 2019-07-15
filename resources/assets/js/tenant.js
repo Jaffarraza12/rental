@@ -198,7 +198,7 @@ var tenant  = {
     },getApplicant:function (id) {
         app.getWithCallback(app.baseUrl()+"/applicant/detail/"+id,[],function (resp) {
             var json =$.parseJSON(resp);
-            var html='<h3><icon class="fa fa-user"></icon> ' + json["name"] +'</h3><h5><icon class="fa fa-money"></icon> Lease Preference: ' + json["lease_perfer"]+'</h5><h5><icon class="fa fa-envelope"></icon> '+ json['email']+'</h5><h5><icon class="fa fa-phone"></icon> '+ json["phone"]+'</h5><div class="margin-top-10 margin-bottom-10 clearfix"></div>'
+            var html='<h3><icon class="fa fa-user"></icon> ' + json["name"] +'</h3><h5><icon class="fa fa-clipboard"></icon> Status:' + json["profile"]+ '</h5><h5><icon class="fa fa-money"></icon> Lease Preference: ' + json["lease_perfer"]+'</h5><h5><icon class="fa fa-envelope"></icon> '+ json['email']+'</h5><h5><icon class="fa fa-phone"></icon> '+ json["phone"]+'</h5><div class="margin-top-10 margin-bottom-10 clearfix"></div>'
             $(".applicant_detail").html(html)
 
         })
