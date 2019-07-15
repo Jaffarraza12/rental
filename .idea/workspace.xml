@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0d4974cb-e432-49c4-901b-06d44bfb0684" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/BuildingServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/BuildingServiceProvider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/common/adminsideview.blade.php" afterPath="$PROJECT_DIR$/resources/views/common/adminsideview.blade.php" />
     </list>
     <ignored path="rems.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuildingServiceProvider.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BuildingServiceProvider.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Providers/BuildingServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+            <state relative-caret-position="524">
+              <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
               <folding>
                 <element signature="e#33#65#0#PHP" expanded="true" />
               </folding>
@@ -81,8 +82,8 @@
       <file leaf-file-name="showBuilding.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/common/showBuilding.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="70" column="42" lean-forward="false" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
+            <state relative-caret-position="235">
+              <caret line="62" column="8" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -91,8 +92,8 @@
       <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/User/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="18" />
+            <state relative-caret-position="564">
+              <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
               <folding>
                 <element signature="e#44#72#0#PHP" expanded="true" />
                 <marker date="1563183808641" expanded="true" signature="1617:2353" ph="..." />
@@ -104,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminsideview.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="adminsideview.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/common/adminsideview.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+            <state relative-caret-position="34">
+              <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -209,11 +210,11 @@
         <option value="$PROJECT_DIR$/resources/assets/js/app.js" />
         <option value="$PROJECT_DIR$/resources/assets/css/form.css" />
         <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" />
         <option value="$PROJECT_DIR$/resources/views/sub_users/view.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/common/showBuilding.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/common/adminsideview.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" />
         <option value="$PROJECT_DIR$/app/Providers/BuildingServiceProvider.php" />
+        <option value="$PROJECT_DIR$/resources/views/common/adminsideview.blade.php" />
       </list>
     </option>
   </component>
@@ -740,12 +741,12 @@
       <workItem from="1517371289073" duration="7465000" />
       <workItem from="1517642473639" duration="4630000" />
       <workItem from="1556308440352" duration="17867000" />
-      <workItem from="1563179576306" duration="5046000" />
+      <workItem from="1563179576306" duration="5212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1737772000" />
+    <option name="totallyTimeSpent" value="1737938000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1304,16 +1305,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Common/DashboardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-          <folding>
-            <element signature="e#1900#1991#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -1322,26 +1313,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/common/adminsideview.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/common/showBuilding.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="70" column="42" lean-forward="false" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/User/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="12" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="18" />
+        <state relative-caret-position="564">
+          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
           <folding>
             <element signature="e#44#72#0#PHP" expanded="true" />
             <marker date="1563183808641" expanded="true" signature="1617:2353" ph="..." />
@@ -1354,11 +1329,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Providers/BuildingServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="35" column="12" lean-forward="false" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+        <state relative-caret-position="524">
+          <caret line="42" column="4" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
           <folding>
             <element signature="e#33#65#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Common/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+          <folding>
+            <element signature="e#1900#1991#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/common/showBuilding.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="62" column="8" lean-forward="true" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/common/adminsideview.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>

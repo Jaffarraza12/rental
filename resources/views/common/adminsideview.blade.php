@@ -13,7 +13,7 @@
             </a>
 
         </li>
-        @if($current_user->pid == 0)
+        @if(Auth::user()->pid == 0)
         <li  @if(!empty($active_menu) && $active_menu =='building') class="active" @endif >
             <a href="#">
                 <i class="fa fa-building-o"></i>

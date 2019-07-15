@@ -32,8 +32,7 @@ class BuildingServiceProvider extends ServiceProvider
 
         $user = User::get();
 
-        $current_user =   User::where('id',Auth::user()->id)->first();
-            
+
         //$defaultBuilding = $request->session()->get('defaultBuilding');
 
 
@@ -41,7 +40,6 @@ class BuildingServiceProvider extends ServiceProvider
         //view()->share(['selected_building' => $building, 'defaultBuilding' => $defaultBuilding]);
         view()->share(['selected_building' => $building]);
         view()->share(['user' => $user]);
-        view()->share([ 'current_user'  =>  $current_user ]);
         view()->share(['user_building' => $user_building]);
     }
 
