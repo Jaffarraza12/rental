@@ -29,7 +29,9 @@ class BuildingServiceProvider extends ServiceProvider
          exit();*/
 
         $user = User::get();
-        print_r($user);
+        echo $userId = Auth::id();
+        echo $userId = Auth::pid();
+
         //$defaultBuilding = $request->session()->get('defaultBuilding');
 
 
