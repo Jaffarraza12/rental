@@ -37,6 +37,13 @@ class DashboardController extends Controller
        $endDate = strtotime(date('Y-m').'-30');
        $applicants = Applicant::where('tenant',100)->OrderBy('applicant_id','DESC')->take(3)->get();
        $building = Building::select()->get();
+
+        $defaultBuilding =  0;
+        if(Session::get('defaultBuilding')){
+            $defaultBuilding = Session::get('defaultBuilding');
+        } else {
+            $defaultBuilding = 0;
+        }
        return view('common.dashboard',[
             'heading'=>$heading,
             'breadcrumb'=>$breadcrumb,
@@ -47,12 +54,6 @@ class DashboardController extends Controller
                     $q->where('available',1)
                         ->orwhere('multi_tenant',1);
                 })->count(),
-            $defaultBuilding =  0;
-            if(Session::get('defaultBuilding')){
-                $defaultBuilding = Session::get('defaultBuilding');
-            } else {
-                $defaultBuilding = 0;
-            }
 
             'TotalPayment'=> Payment::select(DB::raw('SUM(amount) as sales'))->where('building_id',$defaultBuilding )->whereBetween('recieve_at',array($fromDate,$endDate))->first(),
             'TotalWorkOrder'=> WorkOrder::where('status','!=',2)->count(),
