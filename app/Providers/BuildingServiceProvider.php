@@ -33,7 +33,7 @@ class BuildingServiceProvider extends ServiceProvider
         $user = User::get();
 
         $current_user =   User::where('id',Auth::user()->id)->first();
-
+            
         //$defaultBuilding = $request->session()->get('defaultBuilding');
 
 
