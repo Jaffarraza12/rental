@@ -8,7 +8,7 @@
     <ul class="sidebar-menu">
         <li class="sidebar-header">MAIN NAVIGATION</li>
         <li>
-            <a href="#">
+            <a href="{{URL('/')}}">
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
             </a>
 
@@ -77,13 +77,13 @@
             </a>
 
         </li>
-        <li>
+        <li class="hidden">
             <a href="{{URL('')}}">
                 <i class="fa fa-edit"></i> <span>Communication</span>
             </a>
 
         </li>
-        <li>
+        <li class="hidden">
             <a href="#">
                 <i class="fa fa-folder"></i> <span>Reports</span>
                 <i class="fa fa-angle-left pull-right"></i>
@@ -101,7 +101,7 @@
                 <li><a href="{{URL('logout')}}">Log Out</a></li>
             </ul>
         </li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+        <li class="hidden"><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
     </ul>
 </section>
     </div>

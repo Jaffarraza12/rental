@@ -53,10 +53,8 @@ class UserController extends Controller
     public function getData(Request $request)
     {
         // $buildingId = $request->session()->get('defaultBuilding');
-        // $userId = Auth::id();
-
-        return Datatables::of(User  ::select(array('id','name','email','password','contact','address','created_at'))->orderBy('id','desc'))
-
+        $userId = Auth::id();
+        return Datatables::of(User  ::select(array('id','name','email','contact','address','created_at'))->orderBy('id','desc'))
 
             ->addColumn('actions',
                 '<div class="btn-group">
