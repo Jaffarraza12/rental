@@ -17,9 +17,9 @@
         <li  @if(!empty($active_menu) && $active_menu =='building') class="active" @endif >
             <a href="#">
                 <i class="fa fa-building-o"></i>
-                <span>Buildings {{sizeof($user_building)}}</span>
+                <span>Buildings </span>
                 <i class="fa fa-angle-left pull-right"></i>
-                <span class="label label-primary pull-right">4</span>
+                <span class="label label-primary pull-right">{{sizeof($building)}}</span>
 
             </a>
             <ul class="sidebar-submenu"  @if(!empty($active_menu) && $active_menu =='building')  style="display: block;" @else  style="display: none;" @endif>

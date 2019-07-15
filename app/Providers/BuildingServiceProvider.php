@@ -25,8 +25,10 @@ class BuildingServiceProvider extends ServiceProvider
 
         $building = Building::get();
 
-        $user_building= User::select('building.name','building.building_id','users.id')->Join('user_building','user_building.user_id','=','users.id')
-            ->Join('building','building.building_id','=','user_building.building_id')->get();
+        $user_building= User::select('building.name','building.building_id','users.id')
+            ->Join('user_building','user_building.user_id','=','users.id')
+            ->Join('building','building.building_id','=','user_building.building_id')
+            ->get();
         /* print_r($user_building);
          exit();*/
 
