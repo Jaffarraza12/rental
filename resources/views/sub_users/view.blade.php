@@ -40,14 +40,12 @@
                                 <table id="attribute" class="table table-striped table-bordered table-hover dt-responsive dataTable no-footer dtr-inline collapsed">
                                     <thead class="flip-content">
                                     <tr>
-
-                                        <th>ID</th>
                                         <th>Name</th>
                                         <th>Email</th>
                                         <th>Contact</th>
                                         <th>Address</th>
                                         <th>Created On</th>
-                                        <th class="numeric">  </th>
+                                        <th></th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -85,7 +83,6 @@
 
                 { data: 'name', name: 'name' },
                 { data: 'email', name: 'email' },
-                // { data: 'password', name: 'password' },
                 { data: 'contact', name: 'contact' },
                 { data: 'address', name: 'address' },
                 { data: 'created_at', name: 'created_at' },
