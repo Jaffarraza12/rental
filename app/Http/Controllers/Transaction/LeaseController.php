@@ -49,7 +49,7 @@ class LeaseController extends Controller
         foreach (Tenant::get() as $tenant):
             $tenants[$tenant->id] = $tenant->first_name .' '.$tenant->last_name;
         endforeach;
-        foreach (Applicant::where('user_id',$userId)->get() as $applicant):
+        foreach (Applicant::where('status','>',2)->get() as $applicant):
             $applicantsDataSet[]= [
                 'label' => $applicant->name,
                 'value' => $applicant->applicant_id,

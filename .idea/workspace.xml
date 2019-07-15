@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d4974cb-e432-49c4-901b-06d44bfb0684" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/common/adminsideview.blade.php" afterPath="$PROJECT_DIR$/resources/views/common/adminsideview.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Transaction/LeaseController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Transaction/LeaseController.php" />
     </list>
     <ignored path="rems.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,34 +56,70 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminsideview.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/common/adminsideview.blade.php">
+      <file leaf-file-name="LeaseController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Transaction/LeaseController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="21" column="71" lean-forward="false" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
+            <state relative-caret-position="488">
+              <caret line="58" column="47" lean-forward="true" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <file leaf-file-name="lease.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/transaction/lease/lease.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="33" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuildingServiceProvider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Providers/BuildingServiceProvider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="42" column="41" lean-forward="false" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="41" />
+            <state relative-caret-position="199">
+              <caret line="510" column="49" lean-forward="false" selection-start-line="510" selection-start-column="32" selection-end-line="510" selection-end-column="49" />
               <folding>
-                <element signature="e#33#65#0#PHP" expanded="true" />
+                <marker date="1563179562654" expanded="true" signature="4034:4497" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="4048:4495" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="4069:4402" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="5869:6204" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="5883:6202" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="5901:6129" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="6813:7273" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="6827:7271" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="6849:7193" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="8946:15422" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="8960:15420" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="8979:15363" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="16025:16397" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="16039:16395" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="16060:16338" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="16661:16887" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="16675:16885" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="16695:16828" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="19513:25249" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="19527:25247" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="19545:25190" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="25755:26106" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="25769:26104" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="25789:26047" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="26322:26531" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="26336:26529" ph="..." />
+                <marker date="1563179562654" expanded="true" signature="26355:26472" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tenant.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/tenant.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="618">
+              <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lease.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/lease.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,9 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mt-repeater</find>
-      <find>mt-repeater-input</find>
-      <find>repe</find>
       <find>Repeating Forms</find>
       <find>user</find>
       <find>red</find>
@@ -129,6 +162,9 @@
       <find>sub</find>
       <find>getData</find>
       <find>current_user</find>
+      <find>applica</find>
+      <find>applicant</find>
+      <find>applicantsDataSet</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,8 +204,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Property/BuildingController.php" />
         <option value="$PROJECT_DIR$/resources/assets/css/style.css" />
         <option value="$PROJECT_DIR$/resources/assets/css/lease.css" />
-        <option value="$PROJECT_DIR$/resources/views/transaction/lease/lease.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Transaction/LeaseController.php" />
         <option value="$PROJECT_DIR$/resources/views/transaction/payment/add.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Applicant/TenantController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Transaction/OutstandingBalanceController.php" />
@@ -188,6 +222,8 @@
         <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
         <option value="$PROJECT_DIR$/app/Providers/BuildingServiceProvider.php" />
         <option value="$PROJECT_DIR$/resources/views/common/adminsideview.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/transaction/lease/lease.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Transaction/LeaseController.php" />
       </list>
     </option>
   </component>
@@ -253,7 +289,73 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="transaction" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="transaction" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lease" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rental" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -268,32 +370,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rental" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Http" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -638,12 +714,12 @@
       <workItem from="1517371289073" duration="7465000" />
       <workItem from="1517642473639" duration="4630000" />
       <workItem from="1556308440352" duration="17867000" />
-      <workItem from="1563179576306" duration="5723000" />
+      <workItem from="1563179576306" duration="6390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1738449000" />
+    <option name="totallyTimeSpent" value="1739116000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -967,20 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/lease.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/tenant.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="145" column="52" lean-forward="false" selection-start-line="145" selection-start-column="52" selection-end-line="145" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/transaction/lease/production.lease.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -992,13 +1054,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="187" column="0" lean-forward="false" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/transaction/lease/lease.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1014,16 +1069,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Transaction/LeaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="125" column="36" lean-forward="false" selection-start-line="125" selection-start-column="36" selection-end-line="125" selection-end-column="36" />
-          <folding>
-            <element signature="e#714#2181#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1233,13 +1278,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Common/DashboardController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/common/adminsideview.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding>
-            <element signature="e#1900#1991#0#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="350">
+          <caret line="21" column="71" lean-forward="false" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1253,10 +1296,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/common/adminsideview.blade.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Common/DashboardController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="21" column="71" lean-forward="false" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
+        <state relative-caret-position="238">
+          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+          <folding>
+            <element signature="e#1900#1991#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/lease.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/tenant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/transaction/lease/lease.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="510" column="49" lean-forward="false" selection-start-line="510" selection-start-column="32" selection-end-line="510" selection-end-column="49" />
+          <folding>
+            <marker date="1563179562654" expanded="true" signature="4034:4497" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="4048:4495" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="4069:4402" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="5869:6204" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="5883:6202" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="5901:6129" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="6813:7273" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="6827:7271" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="6849:7193" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="8946:15422" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="8960:15420" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="8979:15363" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="16025:16397" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="16039:16395" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="16060:16338" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="16661:16887" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="16675:16885" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="16695:16828" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="19513:25249" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="19527:25247" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="19545:25190" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="25755:26106" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="25769:26104" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="25789:26047" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="26322:26531" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="26336:26529" ph="..." />
+            <marker date="1563179562654" expanded="true" signature="26355:26472" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Transaction/LeaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="58" column="47" lean-forward="true" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="47" />
           <folding />
         </state>
       </provider>
