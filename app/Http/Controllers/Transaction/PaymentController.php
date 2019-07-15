@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Transaction;
 
-use App\http\Model\PaymentCredit;
+use App\Http\Model\PaymentCredit;
 use App\Http\Model\PaymentDone;
 use App\Http\Model\PaymentReceived;
 use App\Http\Model\Unit;
@@ -23,6 +23,7 @@ use Yajra\Datatables\Datatables;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Input;
+
 use Illuminate\Support\Facades\Auth;
 
 class PaymentController extends Controller
