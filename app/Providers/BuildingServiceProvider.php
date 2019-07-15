@@ -8,6 +8,8 @@ use Illuminate\Support\ServiceProvider;
 use App\Http\Model\Building;
 use Illuminate\Http\Request;
 use Illuminate\Session;
+use Illuminate\Support\Facades\Auth;
+
 
 
 class BuildingServiceProvider extends ServiceProvider
