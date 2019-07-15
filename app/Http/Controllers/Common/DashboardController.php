@@ -55,7 +55,7 @@ class DashboardController extends Controller
                         ->orwhere('multi_tenant',1);
                 })->count(),
 
-            'TotalPayment'=> Payment::select(DB::raw('SUM(amount) as sales'))->where('building_id',$defaultBuilding )->whereBetween('recieve_at',array($fromDate,$endDate))->first(),
+            'TotalPayment'=> Payment::select(DB::raw('SUM(amount) as sales'))->whereBetween('recieve_at',array($fromDate,$endDate))->first(),
             'TotalWorkOrder'=> WorkOrder::where('status','!=',2)->where('building_id',$defaultBuilding )->count(),
             'TotalApplicant'=> Applicant::where('tenant',0)->count(),
             'ActiveMenu'=> 'dashboard',

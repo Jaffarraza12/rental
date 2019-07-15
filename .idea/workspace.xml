@@ -71,11 +71,11 @@
       <file leaf-file-name="DashboardController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Common/DashboardController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="58" column="78" lean-forward="false" selection-start-line="58" selection-start-column="78" selection-end-line="58" selection-end-column="78" />
+            <state relative-caret-position="388">
+              <caret line="57" column="77" lean-forward="false" selection-start-line="57" selection-start-column="77" selection-end-line="57" selection-end-column="77" />
               <folding>
                 <element signature="e#47#75#0#PHP" expanded="true" />
-                <element signature="e#2199#2290#0#PHP" expanded="false" />
+                <element signature="e#2159#2250#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -715,12 +715,12 @@
       <workItem from="1517371289073" duration="7465000" />
       <workItem from="1517642473639" duration="4630000" />
       <workItem from="1556308440352" duration="17867000" />
-      <workItem from="1563179576306" duration="10033000" />
+      <workItem from="1563179576306" duration="10073000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1742759000" />
+    <option name="totallyTimeSpent" value="1742799000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1379,11 +1379,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Common/DashboardController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="58" column="78" lean-forward="false" selection-start-line="58" selection-start-column="78" selection-end-line="58" selection-end-column="78" />
+        <state relative-caret-position="388">
+          <caret line="57" column="77" lean-forward="false" selection-start-line="57" selection-start-column="77" selection-end-line="57" selection-end-column="77" />
           <folding>
             <element signature="e#47#75#0#PHP" expanded="true" />
-            <element signature="e#2199#2290#0#PHP" expanded="false" />
+            <element signature="e#2159#2250#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
