@@ -45,6 +45,7 @@
             </a>
             <ul class="sidebar-submenu" @if(!empty($active_menu) && $active_menu =='rental')  style="display: block;" @else  style="display: none;" @endif>
                 <li><a href="{{URL('tenants')}}"> Tenants</a></li>
+                <li><a href="{{URL('lease')}}">Create Lease</a></li>
                 <li><a href="{{URL('outstanding-balance')}}"> Outstanding Balance</a></li>
                 <li><a href="{{URL('rentroll')}}">Rent Roll</a></li>
             </ul>
