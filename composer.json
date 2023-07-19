@@ -11,7 +11,7 @@
         "yajra/laravel-datatables-oracle": "~6.0",
         "laravelcollective/html": "5.2.*",
         "snowfire/beautymail": "dev-master",
-        "mpdf/mpdf": "^6.1",
+        "mpdf/mpdf": "^7.1",
         "barryvdh/laravel-snappy": "^0.3.3",
         "jimmyjs/laravel-report-generator": "^1.0"
     },
